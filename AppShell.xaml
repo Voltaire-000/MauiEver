@@ -4,12 +4,18 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MauiEver"
-    Shell.FlyoutBehavior="Disabled"
+    Shell.FlyoutBehavior="Locked"
     Title="MauiEver">
 
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage">
+    </ShellContent>
+    <!--<FlyoutItem Title="Animals">
+        <Tab Title="Domestic" Route="domestic">
+            <ShellContent Title="Dogs" Route="dogs"/>
+        </Tab>
+    </FlyoutItem>-->
 
 </Shell>
