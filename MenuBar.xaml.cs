@@ -9,6 +9,6 @@ public partial class MenuBar : ContentPage
 
     private async void MenuFlyoutItem_Clicked(object sender, EventArgs e)
     {
-		var result = await OpenPicker(PickOptions.Images);
+		var result = await FilePicker.PickAsync();
     }
 }

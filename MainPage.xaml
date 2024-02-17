@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiEver.MainPage">
 
-    <ScrollView>
+    <!--<ScrollView>
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
@@ -31,6 +31,14 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
         </VerticalStackLayout>
-    </ScrollView>
+    </ScrollView>-->
+
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="File">
+            <MenuFlyoutItem Text="New" Clicked="MenuFlyoutItem_Clicked"/>
+            <MenuFlyoutItem Text="Save"/>
+            <MenuFlyoutItem Text="Exit"/>
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
 
 </ContentPage>
