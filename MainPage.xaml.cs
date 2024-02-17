@@ -9,22 +9,22 @@
             InitializeComponent();
         }
 
-        private async void MenuFlyoutItem_Clicked(object sender, EventArgs e)
-        {
-            var result = await FilePicker.PickAsync();
-        }
-
-        //private void OnCounterClicked(object sender, EventArgs e)
+        //private async void MenuFlyoutItem_Clicked(object sender, EventArgs e)
         //{
-        //    count++;
-
-        //    if (count == 1)
-        //        CounterBtn.Text = $"Clicked {count} time";
-        //    else
-        //        CounterBtn.Text = $"Clicked {count} times";
-
-        //    SemanticScreenReader.Announce(CounterBtn.Text);
+        //    var result = await FilePicker.PickAsync();
         //}
+
+        private void OnCounterClicked(object sender, EventArgs e)
+        {
+            count++;
+
+            if (count == 1)
+                CounterBtn.Text = $"Clicked {count} time";
+            else
+                CounterBtn.Text = $"Clicked {count} times";
+
+            SemanticScreenReader.Announce(CounterBtn.Text);
+        }
 
     }
 
