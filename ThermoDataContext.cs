@@ -2,31 +2,45 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace MauiEver
 {
-    public class thermo
+    public class ThermoDataContext
     {
-        public required string reactant { get; set; }
-        public required string description { get; set; }
-
-        public int t_intervals { get; set; }
-        public required string id_code { get; set; }
-        public required Dictionary<string, double> chemicalFormula { get; set; }
-        public bool gaseous { get; set; }
-        public double molecularWeight { get; set; }
-        public double heatOfFormation { get; set; }
-        public required Dictionary<string, Range> temperatureRange { get; set; }
+        //[Newtonsoft.Json.JsonIgnore]
+        //public string Thermo { get; set; }
+        [Newtonsoft.Json.JsonIgnore]
+        public ThermoDataContext thermo { get; set; }
+        [JsonPropertyName("reactant")]
+        public required string Reactant { get; set; }
+        [JsonPropertyName("description")]
+        public required string Description { get; set; }
+        [JsonPropertyName("t_intervals")]
+        public int TIntervals { get; set; }
+        [JsonPropertyName("id_code")]
+        public required string IdCode { get; set; }
+        [JsonPropertyName("chemicalFormula")]
+        public required Dictionary<string, double> ChemicalFormula { get; set; }
+        [JsonPropertyName("gaseous")]
+        public bool Gaseous { get; set; }
+        [JsonPropertyName("molecularWeight")]
+        public double MolecularWeight { get; set; }
+        [Newtonsoft.Json.JsonIgnore]
+        public double HeatOfFormation { get; set; }
+        [JsonPropertyName("temperatureRange")]
+        public required Dictionary<string, Range> TemperatureRange { get; set; }
     }
 
     public class Range
     {
-        public required List<double> temperatureRange { get; set; }
-        public int numberOfCoefficients { get; set; }
-        public required List<double> tExponents { get; set; }
-        //public double Jmol { get; set; }
-        public required List<double> coefficients { get; set; }
-        public required List<double> integrationConstants { get; set; }
+        public required List<double> TemperatureRange { get; set; }
+        public int NumberOfCoefficients { get; set; }
+        public required List<double> TExponents { get; set; }
+        public double Jmol { get; set; }
+        public required List<double> Coefficients { get; set; }
+        public required List<double> IntegrationConstants { get; set; }
     }
 }
