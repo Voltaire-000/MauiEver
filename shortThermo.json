@@ -1,5 +1,4 @@
-{
-    "thermo": [
+[
         {
             "reactant": "ALBr3",
             "description": "Gurvich,1996a pt1 p188 pt2 p151.",
@@ -204,5 +203,4 @@
                 }
             }
         }
-    ]
-}
+]

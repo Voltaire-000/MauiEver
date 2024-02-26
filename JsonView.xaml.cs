@@ -26,13 +26,15 @@ public partial class JsonView : ContentPage
 			TraceWriter = new ConsoleTraceWriter()
 		};
 
-		var mThermo = JsonConvert.DeserializeObject<ThermoDataContext>(json, settings);
+		//var mThermo = JsonConvert.DeserializeObject<ThermoDataContext>(json, settings);
 
-        //ThermoDataContext thermoSource = JsonConvert.DeserializeObject<ThermoDataContext>(json);
-        ThermoDataContext thermoSource = JsonConvert.DeserializeObject<ThermoDTO>(json);
-		List<ThermoDTO> thermos = JsonConvert.DeserializeObject<List<ThermoDTO>>(json);
+		//ThermoDataContext thermoSource = JsonConvert.DeserializeObject<ThermoDataContext>(json);
 
-        InitializeComponent();
+		//var thermoSource = JsonConvert.DeserializeObject<ThermoDTO>(json);
+
+		List<ThermoDTO> thermos = JsonConvert.DeserializeObject<List<ThermoDTO>>(json, settings);
+
+		InitializeComponent();
 
 		StackLayout stackLayout = new StackLayout();
 		stackLayout.Add(new Label { Text = "No results matched your filter." });
@@ -53,7 +55,7 @@ public partial class JsonView : ContentPage
 		};
 
 
-		collectionView.SetBinding(ItemsView.ItemsSourceProperty, "thermoSource");
+		collectionView.SetBinding(ItemsView.ItemsSourceProperty, "thermos");
 
 	}
 }

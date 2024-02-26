@@ -8,7 +8,7 @@
                    SearchCommand="{Binding FilterCommand}"
                    SearchCommandParameter="{Binding Source={x:Reference searchBar}, Path=Text}"
                    Placeholder="Filter"/>
-        <CollectionView ItemsSource="{Binding thermoSource}" 
+        <CollectionView ItemsSource="{Binding thermos}" 
                         Grid.Row="1">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
