@@ -74,6 +74,9 @@
 	  <MauiXaml Update="DogPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="JsonView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="MenuBar.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
