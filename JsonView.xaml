@@ -3,10 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiEver.JsonView"
              Title="JsonView">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid Margin="20" RowDefinitions="Auto,*">
+        <SearchBar x:Name="searchBar" 
+                   SearchCommand="{Binding FilterCommand}"
+                   SearchCommandParameter="{Binding Source={x:Reference searchBar}, Path=Text}"
+                   Placeholder="Filter"/>
+        <CollectionView ItemsSource="{Binding thermoSource}" 
+                        Grid.Row="1">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            <CollectionView.EmptyView>
+                <ContentView>
+                    <StackLayout HorizontalOptions="CenterAndExpand"
+                             VerticalOptions="CenterAndExpand">
+                        <Label Text="No results matched your filter."
+                           Margin="10,25,10,10"
+                           FontAttributes="Bold"
+                           FontSize="18"
+                           HorizontalOptions="Fill"
+                           HorizontalTextAlignment="Center" />
+                        <Label Text="Try a broader filter?"
+                           FontAttributes="Italic"
+                           FontSize="12"
+                           HorizontalOptions="Fill"
+                           HorizontalTextAlignment="Center" />
+                    </StackLayout>
+                </ContentView>
+            </CollectionView.EmptyView>
+        </CollectionView>
+    </Grid>
 </ContentPage>
