@@ -7,12 +7,9 @@ public partial class People : ContentPage
 {
 	public People()
 	{
-		InitializeComponent();
-		var dataService = new PeopleService();
-		var viewModel = new PeopleViewModel(dataService);
-		//BindingContext = viewModel;
-		//collectionView.BindingContext = viewModel;
+        InitializeComponent();
+        PeopleService dataService = new();
+        PeopleViewModel viewModel = new(dataService);
 		collectionView.ItemsSource = viewModel.People;
-
-	}
+    }
 }

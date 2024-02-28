@@ -15,24 +15,19 @@ namespace MauiEver.Services
         public List<Person>? _people;
         public PeopleService()
         { 
-            
             string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/people.json");
             string json = File.ReadAllText(path);
-
-            var settings = new JsonSerializerSettings
+            JsonSerializerSettings settings = new JsonSerializerSettings
             {
                 TraceWriter = new ConsoleTraceWriter()
             };
 
-            _people = JsonConvert.DeserializeObject<List<Person>>(json);
+            _people = JsonConvert.DeserializeObject<List<Person>>(json, settings);
 
-            
         }
         public List<Person> GetPeople()
         {
             return _people;
         }
-
-
     }
 }
