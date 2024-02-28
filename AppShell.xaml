@@ -28,5 +28,10 @@
         ContentTemplate="{DataTemplate views:People}"
         Route="People">
     </ShellContent>
+    <ShellContent
+        Title="Reactants"
+        ContentTemplate="{DataTemplate views:ReactantsView}"
+        Route="ReactantsView">
+    </ShellContent>
 
 </Shell>

@@ -6,20 +6,16 @@ using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace MauiEver
+namespace MauiEver.Models
 {
-    public class ThermoDataContext
+    public class Reactant
     {
-        //[Newtonsoft.Json.JsonIgnore]
-        //public string Thermo { get; set; }
-        [Newtonsoft.Json.JsonIgnore]
-        public ThermoDataContext thermo { get; set; }
         [JsonPropertyName("reactant")]
-        public required string Reactant { get; set; }
+        public required string Name { get; set; }
         [JsonPropertyName("description")]
         public required string Description { get; set; }
         [JsonPropertyName("t_intervals")]
-        public int TIntervals { get; set; }
+        public int NumberOfTempIntervals { get; set; }
         [JsonPropertyName("id_code")]
         public required string IdCode { get; set; }
         [JsonPropertyName("chemicalFormula")]

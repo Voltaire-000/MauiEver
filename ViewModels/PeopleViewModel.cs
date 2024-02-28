@@ -2,7 +2,6 @@
 using MauiEver.Services;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
 
 namespace MauiEver.ViewModels
 {
@@ -10,7 +9,7 @@ namespace MauiEver.ViewModels
     {
         public event PropertyChangedEventHandler? PropertyChanged;
 
-        private ObservableCollection<Person> _people = new ObservableCollection<Person>(peopleService.GetPeople());
+        private ObservableCollection<Person> _people = new(peopleService.GetPeople());
 
         public ObservableCollection<Person> People
         {

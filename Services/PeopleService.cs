@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
-using MauiEver.Models;
+﻿using MauiEver.Models;
 using Newtonsoft.Json;
 
 namespace MauiEver.Services
@@ -17,7 +10,7 @@ namespace MauiEver.Services
         { 
             string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/people.json");
             string json = File.ReadAllText(path);
-            JsonSerializerSettings settings = new JsonSerializerSettings
+            JsonSerializerSettings settings = new()
             {
                 TraceWriter = new ConsoleTraceWriter()
             };
