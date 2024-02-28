@@ -27,7 +27,7 @@ namespace MauiEver.Services
         }
         public List<Person> GetPeople()
         {
-            return _people;
+            return _people ?? new List<Person>();
         }
     }
 }
