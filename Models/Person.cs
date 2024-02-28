@@ -6,35 +6,31 @@ using System.Threading.Tasks;
 
 namespace MauiEver.Models
 {
-    internal class Person
+    // A class that represents a person
+    public class Person
     {
-        // declare the fields for name. age, city
-        private string name;
-        private int age;
-        private string city;
+        // Declare the properties for name, age, and city
+        public string Name { get; }
+        public int Age { get; }
+        public string City { get; }
 
-        //public string Name { get { return name; } }
-
-        // define constructor
+        // Define a constructor that takes the name, age, and city as parameters
         public Person(string name, int age, string city)
         {
-            // assign the parameters to the fields
-            this.name = name;
-            this.age = age;
-            this.city = city;
+            // Assign the parameters to the properties
+            Name = name;
+            Age = age;
+            City = city;
         }
-        // define method that returns the name of the person
-        public string GetName()
-        {
-            return name;
-        }
-        public int GetAge()
-        {
-            return age;
-        }
-        public string GetCity()
-        {
-            return city;
-        }
+
+        // Define a method that returns the name of the person
+        public string GetName() => Name;
+
+        // Define a method that returns the age of the person
+        public int GetAge() => Age;
+
+        // Define a method that returns the city of the person
+        public string GetCity() => City;
     }
+
 }

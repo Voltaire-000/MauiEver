@@ -1,21 +1,15 @@
-﻿using AddressBook;
-using MauiEver.Models;
+﻿using MauiEver.Models;
 using MauiEver.Services;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MauiEver.ViewModels
 {
-    internal class PeopleViewModel : INotifyPropertyChanged
+    public class PeopleViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler? PropertyChanged;
-        private readonly PeopleService? peopleService;
-        private readonly List<Person>? _people;
+        private readonly PeopleService peopleService;
+        private List<Person> _people;
 
         public PeopleViewModel(PeopleService peopleService)
         {
@@ -23,12 +17,12 @@ namespace MauiEver.ViewModels
             _people = peopleService.GetPeople();
         }
 
-        public List<Person> people
+        public List<Person> People
         {
-            get { return people; }
+            get { return _people; }
             set
             {
-                people = value;
+                _people = value;
                 OnPropertyChanged();
             }
         }

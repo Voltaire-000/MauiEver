@@ -10,9 +10,9 @@ using Newtonsoft.Json;
 
 namespace MauiEver.Services
 {
-    internal class PeopleService
+    public class PeopleService
     {
-        private List<Person>? _people;
+        public List<Person>? _people;
         public PeopleService()
         { 
             

@@ -2,9 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiEver.Views.People"
-             xmlns:local="MauiEver.ViewModels"
+             xmlns:local="clr-namespace:MauiEver.ViewModels"
              Title="People">
-    <CollectionView ItemsSource="{Binding viewModel}">
+
+    <CollectionView x:Name="collectionView" ItemsSource="{Binding}">
         <CollectionView.ItemTemplate>
             <DataTemplate>
                 <!--Create a stack layout for each item-->

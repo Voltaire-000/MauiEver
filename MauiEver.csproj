@@ -58,6 +58,7 @@
 
 	<ItemGroup>
 	  <Compile Remove="dogs.xaml.cs" />
+	  <Compile Remove="Views\PeoplePage.cs" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -87,6 +88,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Update="Data\people.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
 	  <None Update="shortThermo.json">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </None>
