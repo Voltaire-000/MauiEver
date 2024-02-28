@@ -1,6 +1,6 @@
 [
         {
-            "reactant": "ALBr3",
+            "Name": "ALBr3",
             "description": "Gurvich,1996a pt1 p188 pt2 p151.",
             "t_intervals": 2,
             "id_code": "tpis96",
@@ -16,7 +16,7 @@
                     "temperatureRange": [ 200.000, 1000.000 ],
                     "numberOfCoefficients": 7,
                     "tExponents": [ -2.0, -1.0, 0.0, 1.0, 2.0, 3.0, 4.0, 0.0 ],
-                    "H^(298.15)-H^(0) J/mol": 17943.336,
+                    "H_Jmol": 17943.336,
                     "coefficients": [ 4.718948840e+04, -1.053853163e+03, 1.350747168e+01, -6.639869930e-03, 7.269276830e-06, -4.278049490e-09, 1.045573281e-12 ],
                     "integrationConstants": [ -4.699440330e+04, -3.667936780e+01 ]
                 },
@@ -24,7 +24,7 @@
                     "temperatureRange": [ 1000.000, 6000.000 ],
                     "numberOfCoefficients": 7,
                     "tExponents": [ -2.0, -1.0, 0.0, 1.0, 2.0, 3.0, 4.0, 0.0 ],
-                    "H^(298.15)-H^(0) J/mol": 17943.336,
+                    "H_Jmol": 17943.336,
                     "coefficients": [ -8.935527440e+04, -2.678035134e+01, 1.002063997e+01, -8.458764400e-06, 1.904243317e-09, -2.215195785e-13, 1.038219389e-17 ],
                     "integrationConstants": [ -5.249247640e+04, -1.579666403e+01 ]
                 }
@@ -32,7 +32,7 @@
         },
 
         {
-            "reactant": "ALC",
+            "Name": "ALC",
             "description": "Gurvich,1996a pt1 p205 pt2 p165.",
             "t_intervals": 2,
             "id_code": "tpis96",
@@ -48,7 +48,7 @@
                     "temperatureRange": [ 200.000, 1000.000 ],
                     "numberOfCoefficients": 7,
                     "tExponents": [ -2.0, -1.0, 0.0, 1.0, 2.0, 3.0, 4.0, 0.0 ],
-                    "H^(298.15)-H^(0) J/mol": 9058.109,
+                    "H_Jmol": 9058.109,
                     "coefficients": [ 4.139921880e+04, -5.858677890e+02, 5.962445720e+00, -2.006064322e-03, 1.665566136e-06, -7.121649210e-10, 1.271188744e-13 ],
                     "integrationConstants": [ 8.383436110e+04, -8.002165050e+00 ]
                 },
@@ -56,7 +56,7 @@
                     "temperatureRange": [ 1000.000, 6000.000 ],
                     "numberOfCoefficients": 7,
                     "tExponents": [ -2.0, -1.0, 0.0, 1.0, 2.0, 3.0, 4.0, 0.0 ],
-                    "H^(298.15)-H^(0) J/mol": 9058.109,
+                    "H_Jmol": 9058.109,
                     "coefficients": [ 1.937001487e+06, -6.749117790e+03, 1.347525643e+01, -5.850802650e-03, 1.926461091e-06, -2.585922351e-10, 1.222659806e-14 ],
                     "integrationConstants": [ 1.225363649e+05, -6.152244872e+01 ]
                 }
@@ -64,7 +64,7 @@
         },
 
         {
-            "reactant": "Air",
+            "Name": "Air",
             "description": "Mole%:N2 78.084,O2 20.9476,Ar .9365,CO2 .0319.Gordon,1982.Reac",
             "t_intervals": 2,
             "id_code": "g 9/95",
@@ -82,7 +82,7 @@
                     "temperatureRange": [ 200.000, 1000.000 ],
                     "numberOfCoefficients": 7,
                     "tExponents": [ -2.0, -1.0, 0.0, 1.0, 2.0, 3.0, 4.0, 0.0 ],
-                    "H^(298.15)-H^(0) J/mol": 8649.264,
+                    "H_Jmol": 8649.264,
                     "coefficients": [ 1.009950160e+04, -1.968275610e+02, 5.009155110e+00, -5.761013730e-03, 1.066859930e-05, -7.940297970e-09, 2.185231910e-12 ],
                     "integrationConstants": [ -1.767967310e+02, -3.921504225e+00 ]
                 },
@@ -90,7 +90,7 @@
                     "temperatureRange": [ 1000.000, 6000.000 ],
                     "numberOfCoefficients": 7,
                     "tExponents": [ -2.0, -1.0, 0.0, 1.0, 2.0, 3.0, 4.0, 0.0 ],
-                    "H^(298.15)-H^(0) J/mol": 8649.264,
+                    "H_Jmol": 8649.264,
                     "coefficients": [ 2.415214430e+05, -1.257874600e+03, 5.144558670e+00, -2.138541790e-04, 7.065227840e-08, -1.071483490e-11, 6.577800150e-16 ],
                     "integrationConstants": [ 6.462263190e+03, -8.147411905e+00 ]
                 }
@@ -98,7 +98,7 @@
         },
 
         {
-            "reactant": "B2H6(L)",
+            "Name": "B2H6(L)",
             "description": "Diborane. McBride,1996 pp84,92.",
             "t_intervals": 0,
             "id_code": "g 6/96",
@@ -113,13 +113,13 @@
                 "range_1": {
                     "temperatureRange": [ 180.590, 0.000 ],
                     "numberOfCoefficients": 0,
-                    "H^(298.15)-H^(0) J/mol": 0.000
+                    "H_Jmol": 0.000
                 }
             }
         },
 
         {
-            "reactant": "B5H9(L)",
+            "Name": "B5H9(L)",
             "description": "Pentaborane. Chase,1998 p302.",
             "t_intervals": 0,
             "id_code": "j 3/65",
@@ -134,13 +134,13 @@
                 "range_1": {
                     "temperatureRange": [ 298.150, 0.000 ],
                     "numberOfCoefficients": 0,
-                    "H^(298.15)-H^(0) J/mol": 0.000
+                    "H_Jmol": 0.000
                 }
             }
         },
 
         {
-            "reactant": "(CH2)x(cr)",
+            "Name": "(CH2)x(cr)",
             "description": "Ethylene polymer. McBride,1996 pp84,92.",
             "t_intervals": 0,
             "id_code": "g 6/96",
@@ -155,13 +155,13 @@
                 "range_1": {
                     "temperatureRange": [ 298.150, 0.000 ],
                     "numberOfCoefficients": 0,
-                    "H^(298.15)-H^(0) J/mol": 0.000
+                    "H_Jmol": 0.000
                 }
             }
         },
 
         {
-            "reactant": "CH3NO2(L)",
+            "Name": "CH3NO2(L)",
             "description": "Nitromethane. McBride,1996 pp85,93.",
             "t_intervals": 0,
             "id_code": "g 6/96",
@@ -178,13 +178,13 @@
                 "range_1": {
                     "temperatureRange": [ 298.150, 0.000 ],
                     "numberOfCoefficients": 0,
-                    "H^(298.15)-H^(0) J/mol": 0.000
+                    "H_Jmol": 0.000
                 }
             }
         },
 
         {
-            "reactant": "CH4(L)",
+            "Name": "CH4(L)",
             "description": "Methane. McBride,1996 pp85,93.",
             "t_intervals": 0,
             "id_code": "g 6/96",
@@ -199,7 +199,7 @@
                 "range_1": {
                     "temperatureRange": [ 111.643, 0.000 ],
                     "numberOfCoefficients": 0,
-                    "H^(298.15)-H^(0) J/mol": 0.000
+                    "H_Jmol": 0.000
                 }
             }
         }
