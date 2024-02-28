@@ -9,6 +9,11 @@
             InitializeComponent();
         }
 
+        //private async void MenuFlyoutItem_Clicked(object sender, EventArgs e)
+        //{
+        //    var result = await FilePicker.PickAsync();
+        //}
+
         private void OnCounterClicked(object sender, EventArgs e)
         {
             count++;
@@ -20,6 +25,7 @@
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
+
     }
 
 }

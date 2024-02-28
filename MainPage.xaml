@@ -33,4 +33,12 @@
         </VerticalStackLayout>
     </ScrollView>
 
+    <!--<ContentPage.MenuBarItems>
+        <MenuBarItem Text="File">
+            <MenuFlyoutItem Text="New" Clicked="MenuFlyoutItem_Clicked"/>
+            <MenuFlyoutItem Text="Save"/>
+            <MenuFlyoutItem Text="Exit"/>
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>-->
+
 </ContentPage>

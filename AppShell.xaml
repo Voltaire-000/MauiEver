@@ -4,12 +4,24 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MauiEver"
-    Shell.FlyoutBehavior="Disabled"
+    Shell.FlyoutBehavior="Flyout"
     Title="MauiEver">
 
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage">
+    </ShellContent>
+    <ShellContent 
+        Title="Animals" 
+        ContentTemplate="{DataTemplate local:DogPage}" 
+        Route="DogPage">
+    </ShellContent>
+    <ShellContent
+        Title="Thermo Properties"
+        ContentTemplate="{DataTemplate local:JsonView}"
+        Route="JsonView">
+    </ShellContent>
+
 
 </Shell>
