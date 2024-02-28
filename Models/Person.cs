@@ -7,21 +7,12 @@ using System.Threading.Tasks;
 namespace MauiEver.Models
 {
     // A class that represents a person
-    public class Person
+    public class Person(string name, int age, string city)
     {
         // Declare the properties for name, age, and city
-        public string Name { get; }
-        public int Age { get; }
-        public string City { get; }
-
-        // Define a constructor that takes the name, age, and city as parameters
-        public Person(string name, int age, string city)
-        {
-            // Assign the parameters to the properties
-            Name = name;
-            Age = age;
-            City = city;
-        }
+        public string Name { get; } = name;
+        public int Age { get; } = age;
+        public string City { get; } = city;
 
         // Define a method that returns the name of the person
         public string GetName() => Name;
