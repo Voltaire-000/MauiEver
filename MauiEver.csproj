@@ -98,13 +98,13 @@
 
 	<ItemGroup>
 	  <None Update="Data\people.json">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
 	  <None Update="Data\shortThermo.json">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
-	  <None Update="thermoINPjson.json">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  <None Update="Data\thermoINPjson.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
 	</ItemGroup>
 
