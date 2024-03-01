@@ -65,7 +65,7 @@
 
         {
             "Name": "Air",
-            "description": "Mole%:N2 78.084,O2 20.9476,Ar .9365,CO2 .0319.Gordon,1982.Reac",
+            "description": "Mole % :N2 78.084, O2 20.9476, Ar .9365, CO2 .0319. Gordon,1982.Reac",
             "t_intervals": 2,
             "id_code": "g 9/95",
             "chemicalFormula": {
