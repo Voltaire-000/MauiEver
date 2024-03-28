@@ -10,7 +10,7 @@ public partial class JsonView : ContentPage
 
     public JsonView()
 	{
-		string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "shortThermo.json");
+		string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/shortThermo.json");
 		string json = File.ReadAllText(path);
 
 		//JObject json = JObject.Parse(json);

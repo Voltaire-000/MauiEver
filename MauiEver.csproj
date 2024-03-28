@@ -101,7 +101,7 @@
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
 	  <None Update="Data\shortThermo.json">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </None>
 	  <None Update="Data\thermoINPjson.json">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
